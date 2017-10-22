@@ -28,6 +28,11 @@ public class AsyncController {
 		}
 		LOGGER.info("Done..." + result.get());
 		
+		asyncService.asyncMethod();
+		asyncService.process();
+		asyncService.process();
+		asyncService.asyncMethod();
+		
 		return "Hello World!";
 	}
 
