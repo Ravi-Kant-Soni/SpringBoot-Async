@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AsyncService {
 
-	Logger log = LoggerFactory.getLogger(AsyncService.class);
+	Logger log  = LoggerFactory.getLogger(AsyncService.class);
 
 	/**
 	 * Annotate process method with @Async annotation so that it will execute in
