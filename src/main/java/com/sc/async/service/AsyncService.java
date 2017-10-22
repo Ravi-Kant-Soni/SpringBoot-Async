@@ -14,6 +14,7 @@ public class AsyncService {
 	Logger log  = LoggerFactory.getLogger(AsyncService.class);
 
 	/**
+	 * Methods with  Return Type.
 	 * Annotate process method with @Async annotation so that it will execute in
 	 * separate thread when it is invoked.
 	 * 
@@ -29,6 +30,11 @@ public class AsyncService {
 		return new AsyncResult<String>(processInfo);
 	}
 
+	/**
+	 * Methods with void Return Type
+	 * 
+	 * @throws InterruptedException
+	 */
 	@Async
 	public void asyncMethod() throws InterruptedException {
 		log.info("## asyncMethod - Start processing with ID: " + Thread.currentThread().getId());
