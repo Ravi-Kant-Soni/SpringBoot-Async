@@ -30,6 +30,8 @@ public class AsyncCustomizeExecutor extends AsyncConfigurerSupport {
 
 	@Value("${queue.capacity:20}")
 	private int queueCapacity;
+	
+
 
 	@Override
 	public Executor getAsyncExecutor() {
